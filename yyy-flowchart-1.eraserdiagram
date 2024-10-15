@@ -1,0 +1,22 @@
+flowchart-diagram
+
+direction down
+
+Start [label: "开始", shape: oval]
+
+Start > Prepare [label: "准备食材", shape: rectangle]
+Prepare > CutPork [label: "切猪肉", shape: rectangle]
+Prepare > CutPepper [label: "切青椒", shape: rectangle]
+
+CutPork > StirFryPork [label: "炒猪肉", shape: rectangle]
+CutPepper > StirFryPepper [label: "炒青椒", shape: rectangle]
+
+StirFryPork > Combine [label: "合并炒青椒和猪肉", shape: diamond]
+StirFryPepper > Combine
+
+Combine > Season [label: "调味", shape: rectangle]
+
+Season > Done [label: "完成", shape: oval]
+
+Done [color: green]
+
